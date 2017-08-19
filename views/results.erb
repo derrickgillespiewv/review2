@@ -3,10 +3,12 @@
   </header>
   <body>
   <form method= "post" action="/done">
-<!-- label= "food[]" id= "food[]" -->
-     <br>
-     <input type="hidden" value=<%=choice%>> <br>
-     Thanks for getting a <%=choice%> sandwich.
+
+ <h3>You've got a sandwich with</h3>
+<%toppings.each do |confirm|%>
+    <p> <%=confirm%></p>
+<%end%>
+<p> Enjoy! </p>
     </form>
   </body>
 </html>
